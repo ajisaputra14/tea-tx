@@ -231,7 +231,13 @@ function loadCurrentLineIndex() {
 
 async function main() {
   try {
-      console.log(chalk.cyan(`
+      console.log(chalk.green(`
+   █████╗       ██╗ ██╗███████╗      ███████╗
+  ██╔══██╗      ██║ ██║██╔════╝      ██╔════╝
+  ███████║      ██║ ██║█████╗        ███████╗
+  ██╔══██║      ██║ ██║██╔══╝        ╚════██║
+  ██║  ██║ ███████╗ ██║███████╗ ██╗  ███████║
+  ╚═╝  ╚═╝ ╚══════╝ ╚═╝╚══════╝ ╚═╝  ╚══════╝
 ╔═══════════════════════════════════════════════╗
 ║              TEA PROTOCOL AutoTXs             ║ 
 ║     Github:https://github.com/ajisaputra14    ║
