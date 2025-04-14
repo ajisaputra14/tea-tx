@@ -18,3 +18,4 @@ node index.js
 - Then insert your EVM Wallet PrivateKey
 # Notes
 - BOT ini untuk tujuan belajar. segala bentuk penyalahgunaan diluar tanggung jawab saya.
+# tea-tx
