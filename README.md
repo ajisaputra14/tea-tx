@@ -17,7 +17,4 @@ node index.js
 ```
 - Then insert your EVM Wallet PrivateKey
 # Notes
-- You can just run this bot at your own risk, I'm not responsible for any loss or damage caused by this bot.
-- This bot is for educational purposes only.# tea-tx
-# tea-tx
-# tea-tx
+- BOT ini untuk tujuan belajar. segala bentuk penyalahgunaan diluar tanggung jawab saya.
