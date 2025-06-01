@@ -165,7 +165,20 @@ async function sendTeaBatch(wallet, addressEntries, startIdx) {
       });
       
       if (i < addressEntries.length - 1) {
-        await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_TXS_MS));
+        const randomDelay = Math.floor(Math.random() * (60000 - 30000 + 1)) + 30000;
+        const seconds = (randomDelay / 1000).toFixed(1);
+        console.log(chalk.gray(`⏳ Waiting ${seconds} seconds before next transaction...`));
+
+        let waited = 0;
+        const interval = 5000;
+        while (waited < randomDelay) {
+          const chunk = Math.min(interval, randomDelay - waited);
+          await new Promise(resolve => setTimeout(resolve, chunk));
+          waited += chunk;
+          process.stdout.write(chalk.gray(`⌛ ${((randomDelay - waited)/1000).toFixed(1)}s remaining...\r`));
+        }
+
+        console.log(chalk.gray(`✅ Done waiting ${seconds} seconds.\n`));
       }
     } catch (error) {
       console.error(
